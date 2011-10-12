@@ -1,6 +1,6 @@
 [user]
-	name = Matt Chandler
-	email = mkchandler@gmail.com
+    name = Matt Chandler
+    email = mkchandler@gmail.com
 [alias]
     co = checkout
     st = status
