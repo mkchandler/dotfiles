@@ -1,6 +1,37 @@
 [user]
-    name = Matt Chandler
-    email = email@email.com
+    name = 
+    email = 
+    
 [alias]
     co = checkout
     st = status -sb
+	cm = commit -m
+
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v
+    
+[color]
+    branch = auto
+    diff = auto
+    interactive = auto
+    status = auto
+
+[diff]
+    tool = DiffMerge
+    
+[difftool "DiffMerge"]
+    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
+    
+[merge]
+    tool = DiffMerge
+    
+[mergetool "DiffMerge"]
+    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
+    trustExitCode = false
+    
+[mergetool]
+    keepBackup = false
+    
+[push]
+    default = simple
