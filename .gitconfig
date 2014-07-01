@@ -1,37 +1,65 @@
 [user]
     name = 
     email = 
-    
-[alias]
-    co = checkout
-    st = status -sb
-	cm = commit -m
 
+[alias]
+    aa = add --all
+	co = checkout
+    cb = checkout -b
+    ci = commit
+    cm = commit -m
+	st = status -sb
+    
     tags = tag -l
     branches = branch -a
     remotes = remote -v
     
+    l   = log -18 --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
+    ll  = log     --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
+    gl  = log -12 --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
+    gll = log     --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
+
 [color]
-    branch = auto
-    diff = auto
-    interactive = auto
-    status = auto
+    ui = auto
+
+[color "diff"]
+    meta = blue bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow bold
+    remote = green
+    plain = red bold
+
+[color "status"]
+    added = yellow
+    changed = green bold
+    untracked = blue bold
+
+[core]
+	autocrlf = false
 
 [diff]
-    tool = DiffMerge
-    
+	tool = DiffMerge
+
 [difftool "DiffMerge"]
-    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
-    
+	cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
+
 [merge]
-    tool = DiffMerge
-    
+	tool = DiffMerge
+
 [mergetool "DiffMerge"]
-    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
-    trustExitCode = false
-    
+	cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
+	trustExitCode = true
+
 [mergetool]
-    keepBackup = false
-    
+	keepBackup = false
+
+[credential]
+    helper = !'C:\\Users\\mkchand1\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
+
 [push]
-    default = simple
+	default = simple
