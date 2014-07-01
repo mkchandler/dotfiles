@@ -4,11 +4,11 @@
 
 [alias]
     aa = add --all
-	co = checkout
+    co = checkout
     cb = checkout -b
     ci = commit
     cm = commit -m
-	st = status -sb
+    st = status -sb
     
     tags = tag -l
     branches = branch -a
@@ -40,26 +40,26 @@
     untracked = blue bold
 
 [core]
-	autocrlf = false
+    autocrlf = false
 
 [diff]
-	tool = DiffMerge
+    tool = DiffMerge
 
 [difftool "DiffMerge"]
-	cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
+    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
 
 [merge]
-	tool = DiffMerge
+    tool = DiffMerge
 
 [mergetool "DiffMerge"]
-	cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
-	trustExitCode = true
+    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
+    trustExitCode = true
 
 [mergetool]
-	keepBackup = false
+    keepBackup = false
 
 [credential]
     helper = !'C:\\Users\\mkchand1\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
 
 [push]
-	default = simple
+    default = simple
