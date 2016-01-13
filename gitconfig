@@ -1,6 +1,6 @@
 [user]
-    name = 
-    email = 
+    name = Matt Chandler
+    email = mkchandler@gmail.com
 
 [alias]
     aa = add --all
@@ -42,24 +42,8 @@
 [core]
     autocrlf = false
 
-[diff]
-    tool = DiffMerge
-
-[difftool "DiffMerge"]
-    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' "$LOCAL" "$REMOTE"
-
-[merge]
-    tool = DiffMerge
-
-[mergetool "DiffMerge"]
-    cmd = 'C:/Program Files/SourceGear/Common/DiffMerge/sgdm.exe' -merge -result="$PWD/$MERGED" "$PWD/$LOCAL" "$PWD/$BASE" "$PWD/$REMOTE"
-    trustExitCode = true
-
-[mergetool]
-    keepBackup = false
-
-[credential]
-    helper = !'C:\\Users\\mkchand1\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
-
 [push]
     default = simple
+
+[credential]
+    helper = osxkeychain
