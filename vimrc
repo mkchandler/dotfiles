@@ -20,3 +20,4 @@ set incsearch
 autocmd Filetype css,scss,sass setlocal iskeyword+=-
 
 nnoremap <Leader>n :NERDTreeToggle<CR>
+
