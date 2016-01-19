@@ -22,7 +22,7 @@ brew install redis rethinkdb sqlite
 
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
-brew install homebrew/dupes/grep homebrew/dupes/rsync homebrew/dupes/nano homebrew/dupes/zlip
+brew install homebrew/dupes/grep homebrew/dupes/rsync homebrew/dupes/nano
 brew install homebrew/dupes/whois homebrew/dupes/unzip homebrew/dupes/less homebrew/dupes/gzip
 brew install homebrew/dupes/awk homebrew/dupes/bzip2 homebrew/dupes/diffstat homebrew/dupes/diffutils homebrew/dupes/screen
 
