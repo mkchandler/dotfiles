@@ -16,6 +16,7 @@ set relativenumber
 set number
 set nowrap 
 set incsearch
+set hlsearch
 
 " Treat dashed words as whole words in stylesheets
 autocmd Filetype css,scss,sass setlocal iskeyword+=-
