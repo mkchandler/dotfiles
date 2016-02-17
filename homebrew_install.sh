@@ -15,7 +15,7 @@ brew install coreutils findutils
 brew install bash git hub shellcheck
 
 # Install proggy langs
-brew install go elixir node python
+brew install go elixir node python scala
 
 # Install data stuff
 brew install redis rethinkdb sqlite
@@ -31,5 +31,6 @@ brew install gpg2 curl wget tmux ssh-copy-id speedtest_cli
 # Media lib to fix apple buffoonery 
 brew install libdvdcss
 
+brew linkapps
 brew cleanup
 
