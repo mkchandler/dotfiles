@@ -4,6 +4,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'pbrisbin/vim-mkdir'
+Plug 'digitaltoad/vim-pug'
 
 call plug#end()
 
