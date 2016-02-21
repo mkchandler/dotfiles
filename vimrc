@@ -5,6 +5,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'digitaltoad/vim-pug'
+Plug 'elixir-lang/vim-elixir'
 
 call plug#end()
 
