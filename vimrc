@@ -22,5 +22,6 @@ set hlsearch
 " Treat dashed words as whole words in stylesheets
 autocmd Filetype css,scss,sass setlocal iskeyword+=-
 
+inoremap jj <Esc>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
