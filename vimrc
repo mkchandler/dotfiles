@@ -6,6 +6,7 @@ Plug 'tpope/vim-surround'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'digitaltoad/vim-pug'
 Plug 'elixir-lang/vim-elixir'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
