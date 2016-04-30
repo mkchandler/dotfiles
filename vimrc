@@ -3,22 +3,28 @@ call plug#begin()
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'digitaltoad/vim-pug'
 Plug 'elixir-lang/vim-elixir'
 Plug 'leafgarland/typescript-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
 syntax enable
 set background=dark
 colorscheme solarized
+let g:airline_theme='solarized'
+let g:airline_powerline_fonts=1
 
 set relativenumber
-set number
-set nowrap 
+set nowrap
 set incsearch
 set hlsearch
+set laststatus=2
 
 " Treat dashed words as whole words in stylesheets
 autocmd Filetype css,scss,sass setlocal iskeyword+=-
