@@ -11,6 +11,9 @@ parse_git_branch() {
 export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tput setaf 3)\]\$(parse_git_branch) \[$(tput sgr0)\]"
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
+
 alias ll="ls -al"
 alias cl="clear"
 alias co="cd ~/Code"

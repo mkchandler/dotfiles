@@ -15,7 +15,7 @@ brew install coreutils findutils
 brew install bash git hub shellcheck
 
 # Install proggy langs
-brew install go elixir node python scala
+brew install go elixir nvm python scala
 
 # Install data stuff
 brew install redis rethinkdb sqlite
