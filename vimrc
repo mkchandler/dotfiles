@@ -11,6 +11,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
+Plug 'kien/ctrlp.vim'
 
 call plug#end()
 
@@ -28,6 +29,7 @@ set laststatus=2
 
 " Treat dashed words as whole words in stylesheets
 autocmd Filetype css,scss,sass setlocal iskeyword+=-
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 inoremap jj <Esc>
 nnoremap <Leader>n :NERDTreeToggle<CR>
