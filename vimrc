@@ -27,6 +27,7 @@ set nowrap
 set incsearch
 set hlsearch
 set laststatus=2
+set expandtab
 
 " Treat dashed words as whole words in stylesheets
 autocmd Filetype css,scss,sass setlocal iskeyword+=-
