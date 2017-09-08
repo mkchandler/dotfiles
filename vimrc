@@ -33,6 +33,7 @@ set scrolloff=5
 set autoindent
 
 " Line settings
+set number
 set relativenumber
 set wrap
 set textwidth=79
